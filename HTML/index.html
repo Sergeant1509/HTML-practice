@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
+      width: 300px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0;
+      color: #555;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #0077ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #009bf5;
+    }
+
+    .footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #333;
+      text-decoration: none;
+      position: relative;
+    }
+
+    .footer a::after {
+      content: '|';
+      position: absolute;
+      right: -12px;
+      color: #aaa;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .footer a:last-child::after {
+      content: '';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <header>
+      <h1>Login Page</h1>
+      <p>Hello there</p>
+    </header>
+    <form action="" method="get">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" required />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required />
+
+      <input type="submit" value="Login" />
+
+      <label><input type="checkbox" name="remember" /> Remember me</label>
+    </form>
+
+    <div class="footer">
+      <a href="#">Forgot Password</a>
+      <a href="#">Sign Up</a>
+    <br><br><br><br></br></br></br>
+      <a href="mailto:aslaaaxsergeant@gmail.com">Mail Us</a>
+      <a href="tel:916306799173">Call Us</a>
+      <a href="#top">Go to Top</a>
+    </div>
+  </div>
+</body>
+
+</html>
